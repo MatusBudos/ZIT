@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="static/style.css">
+  <link rel="icon" type="image/png" href="static/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
+</head>
+
+<body>
+
+  <nav id="navbar">
+    <div class="brand">Matúš</div>
+    <div class="hamburger" id="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul id="nav-links">
+      <li><a href="index.html" class="active">DOMOV</a></li>
+      <li><a href="projekty.html">PROJEKTY</a></li>
+      <li><a href="about.html">O MNE</a></li>
+      <li><a href="kontakt.html">KONTAKT</a></li>
+      <div class="dark-toggle-container">
+        <button id="darkModeToggleBtn" aria-label="Toggle Dark Mode" class="dark-toggle" title="Switch to Dark Mode"></button>
+      </div>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Som Matúš.</h1>
+      <p>Programujem moderné a efektívne aplikácie.</p>
+      <p>Spájam logiku, dizajn a technológie, aby som vytváral riešenia, ktoré sú rýchle, spoľahlivé a príjemné na používanie.</p>
+    </div>
+  </section>
+
+  <section class="projects-carousel" aria-label="Projects carousel">
+    <h2 class="carousel-title">Projekty</h2>
+    <div class="carousel-container">
+      <button class="carousel-arrow left-arrow" aria-label="Previous projects">&#10094;</button>
+
+      <div class="carousel-slide-wrapper">
+        <div class="carousel-slides">
+          <div class="carousel-card" tabindex="0">
+            <img src="static/pozadie_projekt.jpg" alt="Obrazok C kódu" />
+            <h3>Základy C</h3>
+            <p>Príprava komplexného vývojového prostredia (Linux, kompilátor, editor) a získanie praktickej znalosti základov programovania v C.</p>
+          </div>
+          <div class="carousel-card" tabindex="0">
+            <img src="static/pozadie_projekt.jpg" alt="Obrazok C kódu" />
+            <h3>Cykly a podmienky</h3>
+            <p>Vytvorenie programu, ktorý na základe troch vstupných čísel (typ obrazca, A a B) vykreslí na výstup príslušný geometrický tvar, ktorého rozmery budú určené parametrami A a B.</p>
+          </div>
+          <div class="carousel-card" tabindex="0">
+            <img src="static/pozadie_projekt.jpg" alt="Obrazok C kódu" />
+            <h3>Funkcie</h3>
+            <p>Výpis do terminálu pomocou špeciálnych ANSI sekvencií, čo umožňuje pokročilé formátovanie, pohyb kurzora a vizuálne zaujímavejšie vykresľovanie výstupu programu.</p>
+          </div>
+          <div class="carousel-card" tabindex="0">
+            <img src="static/pozadie_projekt.jpg" alt="Obrazok C kódu" />
+            <h3>Ukazovatele</h3>
+            <p>Vytvorenie programu pre výpočet a vizualizáciu histogramu deviatich celých čísel, pričom program musí načítať zvolený typ vykreslenia, počet čísel n, počiatočnú hodnotu m a spracovať n celých čísel.</p>
+          </div>
+          <div class="carousel-card" tabindex="0">
+            <img src="static/pozadie_projekt.jpg" alt="Obrazok C kódu" />
+            <h3>Dynamická alokácia pamäte</h3>
+            <p>Cieľom je vytvoriť program pre simuláciu pohybu, rotácie a kreslenia na 2D plátno pomocou maximálne troch paralelne bežiacich korytnačiek, ktoré reagujú na vstupné príkazy a rešpektujú cyklické prechádzanie okrajmi plátna.</p>
+          </div>
+          <div class="carousel-card" tabindex="0">
+            <img src="static/pozadie_projekt.jpg" alt="Obrazok C kódu" />
+            <h3>Práca s textom</h3>
+            <p>Účelom je vytvorenie programu, ktorý načíta zadaný počet riadkov so slovami, vykoná normalizáciu každého riadku a vypíše štatistiku o pôvodnom a normalizovanom počte malých písmen, veľkých písmen a medzier.</p>
+          </div>
+          <div class="carousel-card" tabindex="0">
+            <img src="static/pozadie_projekt.jpg" alt="Obrazok C kódu" />
+            <h3>Štruktúry</h3>
+            <p>Cieľom je spracovanie údajov o akciách z príkazového riadka a vstupu, nájdenie záznamu akcie s najvyšším počtom obchodov a výpis všetkých údajov v HTML tabuľke v opačnom poradí.</p>
+          </div>
+          <div class="carousel-card" tabindex="0">
+            <img src="static/portfolio.png" alt="Obrazok C kódu" />
+            <h3>Portfólio</h3>
+            <p>Konštruovanie osobného digitálneho priestoru, ktorého hlavným cieľom je vytvorenie vizuálnej cesty cez moju prácu – od počiatočných nápadov až po finálne projekty – slúžiacej na autentickú prezentáciu mojich znalostí a odhodlania.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-arrow right-arrow" aria-label="Ďalšie projekty">&#10095;</button>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>Matúš</h2>
+        <p>Tvorím s kódom. Premieňam nápady na plynulé a užitočné aplikácie.</p>
+        <div class="footer-social">
+          <a href="https://github.com/MatusBudos" aria-label="GitHub" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://github.com/MatusBudos" aria-label="LinkedIn" title="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="mailto:matus@gmail.com" aria-label="Email" title="Email/Gmail">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Navigácia</h4>
+        <ul>
+          <li><a href="index.html">Domov</a></li>
+          <li><a href="projekty.html">Projekty</a></li>
+          <li><a href="about.html">O mne</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a>matus@gmail.com</a></li>
+          <li>Vysoká nad Kysucou, Slovensko</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 Matúš | Všetky práva vyhradené.
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+  <script src="static/main.js"></script>
+
+  <script>
+    (() => {
+      const slides = document.querySelector('.carousel-slides');
+      const cards = document.querySelectorAll('.carousel-card');
+      const leftArrow = document.querySelector('.left-arrow');
+      const rightArrow = document.querySelector('.right-arrow');
+      const totalCards = cards.length;
+      let currentIndex = 0;
+      let visibleCards = 3;
+
+      function updateVisibleCards() {
+        const width = window.innerWidth;
+        if (width <= 576) visibleCards = 1;
+        else if (width <= 992) visibleCards = 2;
+        else visibleCards = 3;
+      }
+
+      updateVisibleCards();
+      window.addEventListener('resize', () => {
+        const prevVisible = visibleCards;
+        updateVisibleCards();
+        if (prevVisible !== visibleCards) {
+          currentIndex = 0;
+          updateSlidePosition();
+        }
+      });
+
+      function updateSlidePosition() {
+        if (cards.length === 0) return;
+        const gapStyle = getComputedStyle(slides).gap;
+        const gapInPixels = parseFloat(gapStyle.split(' ')[0]) || 0;
+        const cardWidth = cards[0].offsetWidth;
+        const cardSlideDistance = cardWidth + gapInPixels + 0.1;
+        const maxIndex = totalCards - visibleCards;
+        if (currentIndex > maxIndex) currentIndex = maxIndex;
+        if (currentIndex < 0) currentIndex = 0;
+        const offset = currentIndex * cardSlideDistance;
+        slides.style.transform = `translateX(-${offset}px)`;
+      }
+
+      function slideLeft() {
+        currentIndex--;
+        if (currentIndex < 0) currentIndex = totalCards - visibleCards;
+        updateSlidePosition();
+        resetAutoSlide();
+      }
+
+      function slideRight() {
+        currentIndex++;
+        if (currentIndex > totalCards - visibleCards) currentIndex = 0;
+        updateSlidePosition();
+        resetAutoSlide();
+      }
+
+      leftArrow.addEventListener('click', slideLeft);
+      rightArrow.addEventListener('click', slideRight);
+
+      let autoSlideTimer;
+      function startAutoSlide() {
+        if (totalCards > visibleCards) {
+          autoSlideTimer = setInterval(slideRight, 4000);
+        }
+      }
+      function resetAutoSlide() {
+        clearInterval(autoSlideTimer);
+        startAutoSlide();
+      }
+
+      window.addEventListener('load', updateSlidePosition);
+      updateSlidePosition();
+      startAutoSlide();
+    })();
+  </script>
+
+</body>
+</html>

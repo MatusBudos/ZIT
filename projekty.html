@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="static/style.css">
+  <link rel="icon" type="image/png" href="static/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projekty</title>
+</head>
+
+<body>
+
+  <nav id="navbar">
+    <div class="brand">Matúš</div>
+    <div class="hamburger" id="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul id="nav-links">
+      <li><a href="index.html">DOMOV</a></li>
+      <li><a href="projekty.html" class="active">PROJEKTY</a></li>
+      <li><a href="about.html">O MNE</a></li>
+      <li><a href="kontakt.html">KONTAKT</a></li>
+      <div class="dark-toggle-container">
+        <button id="darkModeToggleBtn" aria-label="Toggle Dark Mode" class="dark-toggle" title="Switch to Dark Mode"></button>
+      </div>
+    </ul>
+  </nav>
+
+  <header class="page-header">
+    <div class="header-content">
+      <h1>Moje Projekty</h1>
+      <p>Prehľad mojich kľúčových prác a riešení, demonštrujúcich znalosti v programovaní a softvérovom vývoji.</p>
+    </div>
+  </header>
+
+  <section class="projects-list">
+    <article class="project-item">
+      <div class="project-image-wrapper">
+        <img src="static/pozadie_projekt.jpg" alt="Projekt Základy C" class="project-image" />
+      </div>
+      <div class="project-details">
+        <h3>Základy C: Príprava prostredia</h3>
+        <p>Príprava komplexného vývojového prostredia pre jazyk C, vrátane inštalácie Linuxu (alebo WSL), funkčného prekladača a editora (VS Code). Získanie praktickej znalosti úplných základov programovania, ako je vytvorenie programu "hello world", práca s premennými a dátovými typmi a ladenie kódu.</p>
+        <p class="project-tech"><strong>Technológie:</strong> C, Linux/WSL, VS Code</p>
+        <a href="#" class="btn-primary">Zobraziť kód (GitHub)</a>
+      </div>
+    </article>
+
+    <article class="project-item reverse">
+      <div class="project-image-wrapper">
+        <img src="static/pozadie_projekt.jpg" alt="Projekt Cykly a podmienky" class="project-image" />
+      </div>
+      <div class="project-details">
+        <h3>Cykly a podmienky: Vykresľovanie tvarov</h3>
+        <p>Úlohou je vytvorenie programu, ktorý na základe troch vstupných čísel (typ obrazca, A a B) vykreslí na výstup príslušný geometrický tvar. Program využíva riadiace štruktúry (cykly a podmienky) na dynamické generovanie výstupu do terminálu, čím simuluje jednoduchú grafickú operáciu.</p>
+        <p class="project-tech"><strong>Technológie:</strong> C, Logické operácie</p>
+        <a href="https://github.com/MatusBudos/UPR/blob/main/ulohy/cvicenie2_tvary.c" class="btn-primary">Zobraziť kód (GitHub)</a>
+      </div>
+    </article>
+
+    <article class="project-item">
+      <div class="project-image-wrapper">
+        <img src="static/pozadie_projekt.jpg" alt="Projekt Funkcie" class="project-image" />
+      </div>
+      <div class="project-details">
+        <h3>Funkcie: ANSI sekvencie a formátovanie</h3>
+        <p>Využitie špeciálnych ANSI sekvencií pre ovládanie terminálu. Program demonštruje pokročilé formátovanie výstupu, ako je zmena farby pozadia, pohyb kurzora a vizuálne zaujímavejšie vykresľovanie. Úloha kládla dôraz na modulárny kód a efektívne využitie funkcií.</p>
+        <p class="project-tech"><strong>Technológie:</strong> C, ANSI, Terminál</p>
+        <a href="https://github.com/MatusBudos/UPR/blob/main/ulohy/cvicenie3_farbicky.c" class="btn-primary">Zobraziť kód (GitHub)</a>
+      </div>
+    </article>
+    
+    <article class="project-item reverse">
+      <div class="project-image-wrapper">
+        <img src="static/pozadie_projekt.jpg" alt="Projekt Ukazovatele" class="project-image" />
+      </div>
+      <div class="project-details">
+        <h3>Ukazovatele: Histogram dát</h3>
+        <p>Vytvorenie programu pre výpočet a vizualizáciu histogramu celých čísel. Zadanie vyžadovalo dynamické spracovanie vstupu, prácu s poľami (ktoré sú v C úzko spojené s ukazovateľmi) a efektívne vykreslenie výsledného histogramu v horizontálnom alebo vertikálnom móde. Dôraz bol kladený na pamäťovú efektivitu.</p>
+        <p class="project-tech"><strong>Technológie:</strong> C, Ukazovatele, Polia, Algoritmy</p>
+        <a href="https://github.com/MatusBudos/UPR/blob/main/ulohy/cvicenie4_histogram.c" class="btn-primary">Zobraziť kód (GitHub)</a>
+      </div>
+    </article>
+
+    <article class="project-item">
+      <div class="project-image-wrapper">
+        <img src="static/pozadie_projekt.jpg" alt="Projekt Dynamická alokácia pamäte" class="project-image" />
+      </div>
+      <div class="project-details">
+        <h3>Dynamická alokácia pamäte: Korytnačia grafika</h3>
+        <p>Komplexný projekt simulujúci pohyb, rotáciu a kreslenie na 2D plátno pomocou až troch paralelne bežiacich "korytnačiek". Program využíva dynamickú alokáciu pre plátno a objekty korytnačiek. Zahŕňa pokročilé spracovanie vstupných príkazov a logiku pre cyklické prechádzanie okrajmi plátna (wrap-around).</p>
+        <p class="project-tech"><strong>Technológie:</strong> C, Dynamická alokácia pamäte, 2D Polia</p>
+        <a href="https://github.com/MatusBudos/UPR/blob/main/ulohy/cvicenie5_turtle.c" class="btn-primary">Zobraziť kód (GitHub)</a>
+      </div>
+    </article>
+    
+    <article class="project-item reverse">
+      <div class="project-image-wrapper">
+        <img src="static/pozadie_projekt.jpg" alt="Projekt Práca s textom" class="project-image" />
+      </div>
+      <div class="project-details">
+        <h3>Práca s textom: Normalizácia a štatistika reťazcov</h3>
+        <p>Úlohou je spracovanie textových riadkov, normalizácia slov a medzier podľa špecifických pravidiel a následný výpočet štatistiky. Zameranie na efektívne spracovanie reťazcov, manipuláciu s veľkými/malými písmenami a normalizáciu diakritiky, čo demonštruje znalosti práce s textovými dátami a pamäťou.</p>
+        <p class="project-tech"><strong>Technológie:</strong> C, Reťazce, I/O spracovanie</p>
+        <a href="https://github.com/MatusBudos/UPR/blob/main/ulohy/cvicenie6_stringy.c" class="btn-primary">Zobraziť kód (GitHub)</a>
+      </div>
+    </article>
+
+    <article class="project-item">
+      <div class="project-image-wrapper">
+        <img src="static/pozadie_projekt.jpg" alt="Projekt Štruktúry" class="project-image" />
+      </div>
+      <div class="project-details">
+        <h3>Štruktúry: Spracovanie dát o akciách</h3>
+        <p>Tento projekt sa zameriava na efektívne ukladanie heterogénnych dát pomocou štruktúr. Program spracúva finančné dáta (akciové záznamy) z terminálu, vyhľadáva kľúčové záznamy a transformuje výstup do HTML tabuľky, čo je kľúčová zručnosť pre prácu s dátovými modelmi.</p>
+        <p class="project-tech"><strong>Technológie:</strong> C, Štruktúry, Práca s HTML</p>
+        <a href="https://github.com/MatusBudos/UPR/blob/main/ulohy/cvicenie7_structy.c" class="btn-primary">Zobraziť kód (GitHub)</a>
+      </div>
+    </article>
+
+    <article class="project-item reverse">
+      <div class="project-image-wrapper">
+        <img src="static/portfolio.png" alt="Projekt Portfólio" class="project-image" />
+      </div>
+      <div class="project-details">
+        <h3>Portfólio: Osobná webová vizitka</h3>
+        <p>Konštruovanie osobného digitálneho priestoru, ktorého hlavným cieľom je vytvorenie vizuálnej cesty cez moju prácu – od počiatočných nápadov až po finálne projekty – slúžiacej na autentickú prezentáciu mojich znalostí a odhodlania.</p>
+        <p class="project-tech"><strong>Technológie:</strong> HTML5, CSS3/Sass, JavaScript, Responzívny Dizajn</p>
+        <a href="#" class="btn-primary">Zobraziť kód (GitHub)</a>
+      </div>
+    </article>
+
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>Matúš</h2>
+        <p>Tvorím s kódom. Premieňam nápady na plynulé a užitočné aplikácie.</p>
+        <div class="footer-social">
+          <a href="https://github.com/MatusBudos" aria-label="GitHub" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://github.com/MatusBudos" aria-label="LinkedIn" title="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="mailto:matus@gmail.com" aria-label="Email" title="Email/Gmail">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Navigácia</h4>
+        <ul>
+          <li><a href="index.html">Domov</a></li>
+          <li><a href="projekty.html">Projekty</a></li>
+          <li><a href="about.html">O mne</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a>matus@gmail.com</a></li>
+          <li>Vysoká nad Kysucou, Slovensko</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 Matúš | Všetky práva vyhradené.
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+  <script src="static/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="static/style.css">
+  <link rel="icon" type="image/png" href="static/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>O Mne</title>
+</head>
+
+<body>
+
+  <nav id="navbar">
+    <div class="brand">Matúš</div>
+    <div class="hamburger" id="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul id="nav-links">
+      <li><a href="index.html">DOMOV</a></li>
+      <li><a href="projekty.html">PROJEKTY</a></li>
+      <li><a href="about.html" class="active">O MNE</a></li>
+      <li><a href="kontakt.html">KONTAKT</a></li>
+      <div class="dark-toggle-container">
+        <button id="darkModeToggleBtn" aria-label="Toggle Dark Mode" class="dark-toggle" title="Switch to Dark Mode"></button>
+      </div>
+    </ul>
+  </nav>
+
+  <header class="page-header">
+    <div class="header-content">
+      <h1>O Mne</h1>
+      <p>Kto som, čo robím a aké sú moje skúsenosti a cesta vo svete programovania.</p>
+    </div>
+  </header>
+
+  <section class="about-section">
+    <h2 class="section-title">Moja cesta</h2>
+    <div class="about-content-wrapper">
+      <div class="about-text">
+        <h3>Vášeň pre tvorbu efektívneho kódu</h3>
+        <p>Volám sa Matúš a som študent so silným zameraním na softvérový vývoj a informatiku. Už od mladosti ma fascinuje, ako dokážu logické štruktúry a algoritmy pretvoriť komplexné problémy na elegantné a funkčné riešenia.</p>
+        <p>Moja cesta v programovaní začala s Pythonom, kde som sa zoznámil s tvorbou jednoduchých programov a hier. Následne som prešiel na C++ a C#, čo mi umožnilo riešiť zložitejšie problémy a pochopiť objektovo orientované princípy. Súbežne s tým som získal prvé skúsenosti s webovým vývojom (HTML/CSS/JavaScript). </p>
+        <p>Teraz sa primárne sústredím na C/C++, aby som prehlboval znalosti v oblasti pamäťovej efektívnosti, nízkoúrovňového riadenia a komplexnej algoritmizácie. Verím, že dobrý kód je nielen funkčný, ale aj čistý, udržateľný a predovšetkým užívateľsky prívetivý. Neustále hľadám nové výzvy a technológie, ktoré mi pomôžu posúvať moje zručnosti ďalej.</p>
+        </div>
+      <div class="about-image-wrapper">
+        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=600&h=800&q=80" alt="Vzdelávanie" class="about-image"/>
+      </div>
+    </div>
+  </section>
+  
+  <section class="skills-section">
+    <h2 class="section-title">Zručnosti a Technológie</h2>
+    <p class="section-subtitle">Oblasť môjho záujmu sa sústreďuje najmä na robustné a škálovateľné systémy.</p>
+    
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i class="fa-solid fa-code"></i>
+        <h3>Jazyky a Základy</h3>
+        <ul>
+          <li><strong>C/C++:</strong> Pokročilé algoritmy, ukazovatele, pamäť.</li>
+          <li><strong>Python:</strong> Skriptovanie, automatizácia, dáta.</li>
+          <li><strong>C#:</strong> Backend development, .NET, enterprise aplikácie.</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <i class="fa-solid fa-laptop-code"></i>
+        <h3>Webový Vývoj</h3>
+        <ul>
+          <li><strong>HTML5 / CSS3:</strong> Responzívny dizajn, Sass/LESS.</li>
+          <li><strong>JavaScript (ES6+):</strong> Interaktivita a moderný web.</li>
+          <li><strong>Node.js / Express:</strong> Budovanie rýchlych API.</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <i class="fa-solid fa-database"></i>
+        <h3>Databázy a Systémy</h3>
+        <ul>
+          <li><strong>SQL (PostgreSQL):</strong> Návrh a optimalizácia schém.</li>
+          <li><strong>Git / GitHub:</strong> Verzionovanie a kolaborácia.</li>
+          <li><strong>Linux (WSL):</strong> Práca v termináli a administrácia.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="education-section">
+    <h2 class="section-title">Vzdelanie</h2>
+    
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2025 - Súčasnosť</div>
+        <div class="timeline-content">
+          <h3>Fakulta Elektrotechniky a Informatiky (FEI)</h3>
+          <p class="institution">Vysoká škola báňská – Technická univerzita Ostrava (VŠB-TUO)</p>
+          <p>Študijný program: Informatika. Zameranie na inteligentné systémy, počítačovú grafiku a softwarové inžinierstvo.</p>
+        </div>
+      </div>
+      
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2021 - 2025</div>
+        <div class="timeline-content">
+          <h3>Stredná priemyselná škola informačných technológii - Kysucké Nové Mesto</h3>
+          <p class="institution">Stredoškolské štúdium</p>
+          <p>Zameranie na programovanie, tvorbu webstránok a umelú inteligenciu. Tvorba stredoškolských programovacích projektov.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>Matúš</h2>
+        <p>Tvorím s kódom. Premieňam nápady na plynulé a užitočné aplikácie.</p>
+        <div class="footer-social">
+          <a href="https://github.com/MatusBudos" aria-label="GitHub" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://github.com/MatusBudos" aria-label="LinkedIn" title="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="mailto:matus@gmail.com" aria-label="Email" title="Email/Gmail">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Navigácia</h4>
+        <ul>
+          <li><a href="index.html">Domov</a></li>
+          <li><a href="projekty.html">Projekty</a></li>
+          <li><a href="about.html">O mne</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a>matus@gmail.com</a></li>
+          <li>Vysoká nad Kysucou, Slovensko</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 Matúš | Všetky práva vyhradené.
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+  <script src="static/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="static/style.css">
+  <link rel="icon" type="image/png" href="static/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontakt</title>
+</head>
+
+<body>
+
+  <nav id="navbar">
+    <div class="brand">Matúš</div>
+    <div class="hamburger" id="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul id="nav-links">
+      <li><a href="index.html">DOMOV</a></li>
+      <li><a href="projekty.html">PROJEKTY</a></li> 
+      <li><a href="about.html">O MNE</a></li> 
+      <li><a href="kontakt.html" class="active">KONTAKT</a></li> 
+      <div class="dark-toggle-container">
+        <button id="darkModeToggleBtn" aria-label="Toggle Dark Mode" class="dark-toggle" title="Switch to Dark Mode"></button>
+      </div>
+    </ul>
+  </nav>
+
+  <header class="page-header">
+    <div class="header-content">
+      <h1>Kontakt</h1>
+      <p>Spojte sa so mnou! Či už ide o projekt, spoluprácu alebo len otázku, neváhajte ma kontaktovať.</p>
+    </div>
+  </header>
+
+  <main class="contact-page-content">
+    
+    <section class="contact-info-map-section">
+    <div class="contact-details">
+        <h2 class="section-title">Priame kontakty</h2>
+        <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+                <h4>E-mail</h4>
+                <a href="mailto:matus@gmail.com">matus@gmail.com</a>
+            </div>
+        </div>
+        <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+                <h4>Telefón</h4>
+                <a href="tel:+421912345678">+421 912 345 678</a>
+            </div>
+        </div>
+        <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+                <h4>Adresa/Lokalita</h4>
+                <p>Vysoká nad Kysucou, Slovensko</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="map-container">
+        <h2 class="section-title">Kde ma nájdete</h2>
+        <div class="map-wrapper">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83101.59727557753!2d18.436395864573363!3d49.391412321118075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47146e325f232cf9%3A0x400f7d1c6970890!2s023%2055%20Vysok%C3%A1%20nad%20Kysucou%2C%20Slovensko!5e0!3m2!1ssk!2scz!4v1762797357517!5m2!1ssk!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Mapa Vysoká nad Kysucou">
+            </iframe>
+            
+            <div class="map-info-overlay">
+                <h4><i class="fa-solid fa-location-dot"></i> Moja lokalita</h4>
+                <p>Vysoká nad Kysucou<br>Žilinský kraj, Slovensko</p>
+                <a href="https://www.google.com/maps/place/Vysok%C3%A1+nad+Kysucou" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="map-link">
+                    Otvoriť v Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="contact-form-section">
+        <h2 class="section-title">Napíšte mi správu</h2>
+        
+        <form id="contactForm" class="contact-form">
+            <div class="form-group">
+                <label for="name">Vaše Meno:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Váš E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Predmet Správy:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Správa:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn-primary">Odoslať správu</button>
+        </form>
+
+        <div id="formMessage" class="form-message" style="display: none;">
+            </div>
+        
+    </section>
+
+  </main>
+  
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>Matúš</h2>
+        <p>Tvorím s kódom. Premieňam nápady na plynulé a užitočné aplikácie.</p>
+        <div class="footer-social">
+          <a href="https://github.com/MatusBudos" aria-label="GitHub" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/MatusBudos" aria-label="LinkedIn" title="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="mailto:matus@gmail.com" aria-label="Email" title="Email/Gmail">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Navigácia</h4>
+        <ul>
+          <li><a href="index.html">Domov</a></li>
+          <li><a href="projekty.html">Projekty</a></li>
+          <li><a href="about.html">O mne</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a>matus@gmail.com</a></li>
+          <li>Vysoká nad Kysucou, Slovensko</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 Matúš | Všetky práva vyhradené.
+    </div>
+  </footer>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+  <script src="static/main.js"></script>
+
+  <script>
+    const contactForm = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
+
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const inputs = this.querySelectorAll('input[required], textarea[required]');
+        let allFilled = true;
+        const fieldsToReset = []; 
+
+        inputs.forEach(input => {
+          if (!input.value.trim()) {
+            allFilled = false;
+            input.style.border = '1px solid red'; 
+          } else {
+            input.style.border = ''; 
+            fieldsToReset.push(input);
+          }
+        });
+
+        if (allFilled) {
+          this.style.display = 'none';
+
+          formMessage.style.display = 'block';
+          formMessage.classList.add('success');
+          formMessage.classList.remove('error');
+          formMessage.innerHTML = `
+            <p><strong>Správa bola úspešne odoslaná!</strong></p>
+            <p>Ďakujem za váš záujem, čoskoro sa vám ozvem.</p>
+            <button type="button" class="btn-primary" id="sendAgainBtn" style="margin-top: 1rem;">Poslať znova</button>
+          `;
+          
+          document.getElementById('sendAgainBtn').addEventListener('click', () => {
+            contactForm.reset();
+            contactForm.style.display = 'grid';
+            formMessage.style.display = 'none';
+            fieldsToReset.forEach(input => input.style.border = '');
+          });
+
+        } else {
+          formMessage.style.display = 'block';
+          formMessage.classList.remove('success');
+          formMessage.classList.add('error');
+          formMessage.innerHTML = '<p><strong>Prosím, vyplňte všetky povinné polia.</strong></p>';
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
